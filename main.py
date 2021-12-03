@@ -3,11 +3,11 @@ import random
 import praw
 
 client = discord.Client()
-reddit = praw.Reddit(client_id = "Wn07EJGAC60azPpkQk-JCw",
-                     client_secret = "NHOPAG8Q8jxHuCAxxJVYDzAglJoG2A",
-                     username = "NoolollyBot",
-                     password = "PythonBot123",
-                     user_agent = "pythonpraw",
+reddit = praw.Reddit(client_id = "[REDACTED]",
+                     client_secret = "[REDACTED]",
+                     username = "[REDACTED]",
+                     password = "[REDACTED]",
+                     user_agent = "[REDACTED]",
                      check_for_async = False)
 allPosts1 = []
 s1 = reddit.subreddit("catpics")
@@ -51,7 +51,7 @@ async def on_message(message):
             print(f"Meow Sent by {message.author.name}!")
     
     if "gay" in message.content or "Gay" in message.content:
-      await message.channel.send("Yes, Alex is gay!")
+      await message.channel.send(f"Yes, {message.author.name.split('#')[0]} is gay!")
 
     if message.content == "Meme" or message.content == "meme":
       global allPosts2
@@ -64,4 +64,4 @@ async def on_message(message):
     if message.content == "yeeeees":
         await message.channel.send(f"Well done {message.author.name.split('#')[0]}!")
 
-client.run("OTEwOTQ4MjMxNTc4NTIxNjcy.YZaQpw.e2MiUYfFqApK7kVpz7tZOBcoJIU")
+client.run("[REDACTED]")
