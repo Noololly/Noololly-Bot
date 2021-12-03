@@ -49,9 +49,6 @@ async def on_message(message):
         if message.author.name.split('#')[0] != "Noololly Bot":
             await message.channel.send(f"Yes, {message.author.name.split('#')[0]} meow!")
             print(f"Meow Sent by {message.author.name}!")
-    
-    if "gay" in message.content or "Gay" in message.content:
-      await message.channel.send(f"Yes, {message.author.name.split('#')[0]} is gay!")
 
     if message.content == "Meme" or message.content == "meme":
       global allPosts2
